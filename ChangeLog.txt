@@ -1,3 +1,9 @@
+Version 1.0.1.6:
+- removed settings and update information from the main view to single views for settings and updates to make the main view more clear
+- added support for Automobilista 2 (for now fuel display and calculator is not working because there is no average fuel consumption in the AMS2 data)
+- minor bugfixes
+- added new input fields to set front and rear axle temperature differences individually
+
 Version 1.0.1.5:
 - as you should see now, changelog is visible to check what is actually updated
 - added fuel calculator, the values can be calculated as soon as you are in pits or on track. If you have not driven the initial fuel consumption is taken for calculation. It is recommended to drive a few laps until the correct fuel consumption is given by the raceroom data. The initial fuel consumption is in most cases higher than your actual fuel consumption
