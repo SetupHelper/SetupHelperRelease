@@ -1,3 +1,6 @@
+Version 1.0.1.7:
+- fixed tooltip for setting the temperature difference
+
 Version 1.0.1.6:
 - removed settings and update information from the main view to single views for settings and updates to make the main view more clear
 - added support for Automobilista 2 (for now fuel display and calculator is not working because there is no average fuel consumption in the AMS2 data)
