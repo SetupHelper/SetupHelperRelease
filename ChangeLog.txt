@@ -1,5 +1,6 @@
 Version 1.0.1.7:
 - fixed tooltip for setting the temperature difference
+- added value check for setting aimed temp-difference, values between 3 and 15 are valid
 
 Version 1.0.1.6:
 - removed settings and update information from the main view to single views for settings and updates to make the main view more clear
