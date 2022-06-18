@@ -2,6 +2,7 @@ Version 1.0.1.7:
 - fixed tooltip for setting the temperature difference
 - added value check for setting aimed temp-difference, values between 3 and 15 are valid
 - added suggestion for tempdifference setting depending on the car/game combo
+- Aimed temperature difference will not be displayed on FWD cars
 
 Version 1.0.1.6:
 - removed settings and update information from the main view to single views for settings and updates to make the main view more clear
