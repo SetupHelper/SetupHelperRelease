@@ -1,0 +1,50 @@
+Version 1.0.2.0:
+- added fuel calculation for AMS2
+
+Version 1.0.1.9:
+- added italian translation
+- corrected french translation
+- changed AMS2 interface from the web file to shared memory (though the data provided still not works correctly)
+
+Version 1.0.1.8:
+- added french translation
+
+Version 1.0.1.7:
+- fixed tooltip for setting the temperature difference
+- added value check for setting aimed temp-difference, values between 3 and 15 are valid
+- added suggestion for tempdifference setting depending on the car/game combo
+- Aimed temperature difference will not be displayed on FWD cars
+
+Version 1.0.1.6:
+- removed settings and update information from the main view to single views for settings and updates to make the main view more clear
+- added support for Automobilista 2 (for now fuel display and calculator is not working because there is no average fuel consumption in the AMS2 data)
+- minor bugfixes
+- added new input fields to set front and rear axle temperature differences individually
+
+Version 1.0.1.5:
+- as you should see now, changelog is visible to check what is actually updated
+- added fuel calculator, the values can be calculated as soon as you are in pits or on track. If you have not driven the initial fuel consumption is taken for calculation. It is recommended to drive a few laps until the correct fuel consumption is given by the raceroom data. The initial fuel consumption is in most cases higher than your actual fuel consumption
+
+Version 1.0.1.4:
+- minor error changes
+- voice notification now include backgroundsound (just like in crew chief)
+- voice notification volume is adjustable
+- big update -> added update button if new version is available. Check for updated version is always on startup. When new version is available, button will be displayed on the upper right of the window
+
+Version 1.0.1.3:
+- corrected fuel calculation which was wrong for races in minutes. Fuel will now be calculated with best personal best lap time + 2 laps extra fuel. In order to calculate fuel correctly it is important to drive a few counted laps because Raceroom works with a default consumption per lap, which changes after a few laps have been completed.
+- Added voice notification if 15 or 25 km completed in stint (Thanks to mr_belowski from crew chief for the notifications). The notifications volume depends on the windows settings. Keep in mind that it could be very loud. Don't wreck you hardware if this is the case. It might happen that crew chief will talk at the same time the notification is running. This will be issued in a future version when crew chief will give out these notifications (the date of this change is not known).
+
+Version 1.0.1.2:
+corrected issue when accidently hit the "drive" button when in pits, which lead to not displaying calculated values.
+-> values will now be deleted when car has left the pits.
+corrected issue in distance calculation when starting setup helper after raceroom.
+
+Version 1.0.1.1:
+- a user reported an error in the distance calculation. This lead to negative distances and then to not showing neccessary adjustments and fuel calculations. The problem is solved in version 1.0.1.1. Additionally the helper is closed when raceroom is closed.
+
+Version 1.0.1.0:
+- Uploaded new version to update temperatures when entering the pitlane. In the before version the update was stopped as soon as the pitlane is entered, which lead to wrong calculations for the adjustments.
+- tiretemperatures will be recorded throughout the stint and after 15 km driven the values for the adaption are calculated. In the before version the last recorded value was taken for calculation, which lead to errors on tracks as Mid-Ohio.
+- added calculated fuel for races (not tested for races in minutes. Please report if fuel is not calculated correctly). Fuel will be calculated by max-value given in the API. After 2-3 laps the fuel will be calculated by the fuel consumption value recorded in these laps.
+- added new overlay for calculated fuel when in pits
